@@ -9,7 +9,7 @@ import java.time.Duration;
 public class ChromeBrowserTest {
 
     public static void main(String[] args) throws InterruptedException {
-String baseUrl= "https://www.buzzbingo.com/";
+String baseUrl= "https://demo.nopcommerce.com/";
 //launch browser
 WebDriver driver = new ChromeDriver();
 //open url
@@ -31,9 +31,9 @@ driver.get(baseUrl);
         //get current url
         System.out.println("The current url:" + driver.getCurrentUrl());
 
-        String homeUrl = "https://www.buzzbingo.com/home";
+        String loginUrl = "https://demo.nopcommerce.com/login?returnUrl=%2F";
 
-        driver.navigate().to(homeUrl);
+        driver.navigate().to(loginUrl);
         System.out.println("Get current url "+ driver.getCurrentUrl());
 
 
